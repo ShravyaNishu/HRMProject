@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 14 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Akash\Project Workarea\HRM Project\HrmProjectV1\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">29 methods, 14 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="compareAddUserScreenshot">compareAddUserScreenshot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_001_VerifyHomePage" class="method navigator-link" hash-for-method="compareHomePageScreenshot">compareHomePageScreenshot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials" class="method navigator-link" hash-for-method="validPasswordAttempt">validPasswordAttempt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_004_FieldLevelValidations" class="method navigator-link" hash-for-method="validatingAddUserWhenEmployeeNameFieldIsEmpty">validatingAddUserWhenEmployeeNameFieldIsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_004_FieldLevelValidations" class="method navigator-link" hash-for-method="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum">validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_004_FieldLevelValidations" class="method navigator-link" hash-for-method="validatingAddUserWhenUserameFieldIsEmpty">validatingAddUserWhenUserameFieldIsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_004_FieldLevelValidations" class="method navigator-link" hash-for-method="verfyAddUserUsernameFieldForOnlyAlphaNumeric">verfyAddUserUsernameFieldForOnlyAlphaNumeric</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_004_FieldLevelValidations" class="method navigator-link" hash-for-method="verifyAddUserUsernameFieldValueLimit">verifyAddUserUsernameFieldValueLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyByAddingNewDuplicateUsername">verifyByAddingNewDuplicateUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts" class="method navigator-link" hash-for-method="verifyLoginWithThreeWrongAttempts(Admin3, pass3)">verifyLoginWithThreeWrongAttempts(Admin3, pass3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts" class="method navigator-link" hash-for-method="verifyLoginWithThreeWrongAttempts(Admin2, pass2)">verifyLoginWithThreeWrongAttempts(Admin2, pass2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts" class="method navigator-link" hash-for-method="verifyLoginWithThreeWrongAttempts(Admin1, pass1)">verifyLoginWithThreeWrongAttempts(Admin1, pass1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_004_FieldLevelValidations" class="method navigator-link" hash-for-method="verifyLoginWithTwoWrongAttempts">verifyLoginWithTwoWrongAttempts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyNonExistingEmployeeNameRecords">verifyNonExistingEmployeeNameRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials" class="method navigator-link" hash-for-method="invalidPasswordAttempt">invalidPasswordAttempt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyAdminPageContents">verifyAdminPageContents</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_005_VerifyLogoutModule" class="method navigator-link" hash-for-method="verifyContentsOfTheUserProfileBtn">verifyContentsOfTheUserProfileBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_007_VerifyDashboardModule" class="method navigator-link" hash-for-method="verifyDashboardPageContents">verifyDashboardPageContents</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyExistingEmployeeNameRecords">verifyExistingEmployeeNameRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_005_VerifyLogoutModule" class="method navigator-link" hash-for-method="verifyLogout">verifyLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyResultsForStatusDisabled">verifyResultsForStatusDisabled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyResultsForStatusEnabled">verifyResultsForStatusEnabled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyResultsForUserRoleAdmin">verifyResultsForUserRoleAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyResultsForUserRoleESS">verifyResultsForUserRoleESS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifySearchResultWithExistingUsername">verifySearchResultWithExistingUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyStatusAfterAddingNewUser">verifyStatusAfterAddingNewUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyStatusContentsInDropDown">verifyStatusContentsInDropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.TC_003_VerifyAdminModule" class="method navigator-link" hash-for-method="verifyUserRoleOptions">verifyUserRoleOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithThreeWrongAttempts(Admin3, pass3)">
+                  </a> <!-- verifyLoginWithThreeWrongAttempts(Admin3, pass3) -->
+                  <span class="method-name">verifyLoginWithThreeWrongAttempts</span>
+                  <span class="parameters">(Admin3,pass3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts.verifyLoginWithThreeWrongAttempts(TC_006_DataDrivenTestingFor3FailedAttempts.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithThreeWrongAttempts(Admin2, pass2)">
+                  </a> <!-- verifyLoginWithThreeWrongAttempts(Admin2, pass2) -->
+                  <span class="method-name">verifyLoginWithThreeWrongAttempts</span>
+                  <span class="parameters">(Admin2,pass2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts.verifyLoginWithThreeWrongAttempts(TC_006_DataDrivenTestingFor3FailedAttempts.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithThreeWrongAttempts(Admin1, pass1)">
+                  </a> <!-- verifyLoginWithThreeWrongAttempts(Admin1, pass1) -->
+                  <span class="method-name">verifyLoginWithThreeWrongAttempts</span>
+                  <span class="parameters">(Admin1,pass1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts.verifyLoginWithThreeWrongAttempts(TC_006_DataDrivenTestingFor3FailedAttempts.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.hrm.testcases.TC_003_VerifyAdminModule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareAddUserScreenshot">
+                  </a> <!-- compareAddUserScreenshot -->
+                  <span class="method-name">compareAddUserScreenshot</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_003_VerifyAdminModule.compareAddUserScreenshot(TC_003_VerifyAdminModule.java:471)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyByAddingNewDuplicateUsername">
+                  </a> <!-- verifyByAddingNewDuplicateUsername -->
+                  <span class="method-name">verifyByAddingNewDuplicateUsername</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_003_VerifyAdminModule.verifyByAddingNewDuplicateUsername(TC_003_VerifyAdminModule.java:594)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNonExistingEmployeeNameRecords">
+                  </a> <!-- verifyNonExistingEmployeeNameRecords -->
+                  <span class="method-name">verifyNonExistingEmployeeNameRecords</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_003_VerifyAdminModule.verifyNonExistingEmployeeNameRecords(TC_003_VerifyAdminModule.java:299)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.hrm.testcases.TC_004_FieldLevelValidations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingAddUserWhenEmployeeNameFieldIsEmpty">
+                  </a> <!-- validatingAddUserWhenEmployeeNameFieldIsEmpty -->
+                  <span class="method-name">validatingAddUserWhenEmployeeNameFieldIsEmpty</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.validatingAddUserWhenEmployeeNameFieldIsEmpty(TC_004_FieldLevelValidations.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum">
+                  </a> <!-- validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum -->
+                  <span class="method-name">validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum(TC_004_FieldLevelValidations.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingAddUserWhenUserameFieldIsEmpty">
+                  </a> <!-- validatingAddUserWhenUserameFieldIsEmpty -->
+                  <span class="method-name">validatingAddUserWhenUserameFieldIsEmpty</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.validatingAddUserWhenUserameFieldIsEmpty(TC_004_FieldLevelValidations.java:207)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyAddUserUsernameFieldForOnlyAlphaNumeric">
+                  </a> <!-- verfyAddUserUsernameFieldForOnlyAlphaNumeric -->
+                  <span class="method-name">verfyAddUserUsernameFieldForOnlyAlphaNumeric</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.verfyAddUserUsernameFieldForOnlyAlphaNumeric(TC_004_FieldLevelValidations.java:333)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddUserUsernameFieldValueLimit">
+                  </a> <!-- verifyAddUserUsernameFieldValueLimit -->
+                  <span class="method-name">verifyAddUserUsernameFieldValueLimit</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.verifyAddUserUsernameFieldValueLimit(TC_004_FieldLevelValidations.java:281)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithTwoWrongAttempts">
+                  </a> <!-- verifyLoginWithTwoWrongAttempts -->
+                  <span class="method-name">verifyLoginWithTwoWrongAttempts</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.verifyLoginWithTwoWrongAttempts(TC_004_FieldLevelValidations.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.hrm.testcases.TC_001_VerifyHomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareHomePageScreenshot">
+                  </a> <!-- compareHomePageScreenshot -->
+                  <span class="method-name">compareHomePageScreenshot</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [false] but found [true]
+	at com.hrm.testcases.TC_001_VerifyHomePage.compareHomePageScreenshot(TC_001_VerifyHomePage.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validPasswordAttempt">
+                  </a> <!-- validPasswordAttempt -->
+                  <span class="method-name">validPasswordAttempt</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials.validPasswordAttempt(TC_002_VerifyHomeLoginWithCredentials.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrm.testcases.TC_007_VerifyDashboardModule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDashboardPageContents">
+                  </a> <!-- verifyDashboardPageContents -->
+                  <span class="method-name">verifyDashboardPageContents</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrm.testcases.TC_003_VerifyAdminModule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser">
+                  </a> <!-- deleteUser -->
+                  <span class="method-name">deleteUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdminPageContents">
+                  </a> <!-- verifyAdminPageContents -->
+                  <span class="method-name">verifyAdminPageContents</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyExistingEmployeeNameRecords">
+                  </a> <!-- verifyExistingEmployeeNameRecords -->
+                  <span class="method-name">verifyExistingEmployeeNameRecords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResultsForStatusDisabled">
+                  </a> <!-- verifyResultsForStatusDisabled -->
+                  <span class="method-name">verifyResultsForStatusDisabled</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResultsForStatusEnabled">
+                  </a> <!-- verifyResultsForStatusEnabled -->
+                  <span class="method-name">verifyResultsForStatusEnabled</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResultsForUserRoleAdmin">
+                  </a> <!-- verifyResultsForUserRoleAdmin -->
+                  <span class="method-name">verifyResultsForUserRoleAdmin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResultsForUserRoleESS">
+                  </a> <!-- verifyResultsForUserRoleESS -->
+                  <span class="method-name">verifyResultsForUserRoleESS</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchResultWithExistingUsername">
+                  </a> <!-- verifySearchResultWithExistingUsername -->
+                  <span class="method-name">verifySearchResultWithExistingUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStatusAfterAddingNewUser">
+                  </a> <!-- verifyStatusAfterAddingNewUser -->
+                  <span class="method-name">verifyStatusAfterAddingNewUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStatusContentsInDropDown">
+                  </a> <!-- verifyStatusContentsInDropDown -->
+                  <span class="method-name">verifyStatusContentsInDropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserRoleOptions">
+                  </a> <!-- verifyUserRoleOptions -->
+                  <span class="method-name">verifyUserRoleOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrm.testcases.TC_005_VerifyLogoutModule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContentsOfTheUserProfileBtn">
+                  </a> <!-- verifyContentsOfTheUserProfileBtn -->
+                  <span class="method-name">verifyContentsOfTheUserProfileBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogout">
+                  </a> <!-- verifyLogout -->
+                  <span class="method-name">verifyLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPasswordAttempt">
+                  </a> <!-- invalidPasswordAttempt -->
+                  <span class="method-name">invalidPasswordAttempt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Akash\Project Workarea\HRM Project\HrmProjectV1\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;HrmTest1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.hrm.testcases.TC_001_VerifyHomePage&quot;/&gt;
+      &lt;class name=&quot;com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials&quot;/&gt;
+      &lt;class name=&quot;com.hrm.testcases.TC_003_VerifyAdminModule&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;deleteUser&quot;/&gt;
+          &lt;include name=&quot;verifyAdminPageContents&quot;/&gt;
+          &lt;include name=&quot;verifyResultsForStatusEnabled&quot;/&gt;
+          &lt;include name=&quot;verifyResultsForStatusDisabled&quot;/&gt;
+          &lt;include name=&quot;verifyResultsForUserRoleESS&quot;/&gt;
+          &lt;include name=&quot;verifyResultsForUserRoleAdmin&quot;/&gt;
+          &lt;include name=&quot;verifyUserRoleOptions&quot;/&gt;
+          &lt;include name=&quot;verifyStatusAfterAddingNewUser&quot;/&gt;
+          &lt;include name=&quot;verifySearchResultWithExistingUsername&quot;/&gt;
+          &lt;include name=&quot;verifyExistingEmployeeNameRecords&quot;/&gt;
+          &lt;include name=&quot;verifyNonExistingEmployeeNameRecords&quot;/&gt;
+          &lt;include name=&quot;verifyStatusContentsInDropDown&quot;/&gt;
+          &lt;include name=&quot;compareAddUserScreenshot&quot;/&gt;
+          &lt;include name=&quot;verifyByAddingNewDuplicateUsername&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.hrm.testcases.TC_003_VerifyAdminModule --&gt;
+      &lt;class name=&quot;com.hrm.testcases.TC_004_FieldLevelValidations&quot;/&gt;
+      &lt;class name=&quot;com.hrm.testcases.TC_005_VerifyLogoutModule&quot;/&gt;
+      &lt;class name=&quot;com.hrm.testcases.TC_007_VerifyDashboardModule&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HrmTest1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HrmTest2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HrmTest2 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">HrmTest1 (6 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">HrmTest2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(29);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyByAddingNewDuplicateUsername')
+data.setCell(0, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(0, 3, 36608);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'deleteUser')
+data.setCell(1, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(1, 3, 31948);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyResultsForStatusDisabled')
+data.setCell(2, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(2, 3, 27039);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyAddUserUsernameFieldValueLimit')
+data.setCell(3, 2, 'com.hrm.testcases.TC_004_FieldLevelValidations')
+data.setCell(3, 3, 25320);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validatingAddUserWhenEmployeeNameFieldIsEmpty')
+data.setCell(4, 2, 'com.hrm.testcases.TC_004_FieldLevelValidations')
+data.setCell(4, 3, 24266);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verfyAddUserUsernameFieldForOnlyAlphaNumeric')
+data.setCell(5, 2, 'com.hrm.testcases.TC_004_FieldLevelValidations')
+data.setCell(5, 3, 23614);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum')
+data.setCell(6, 2, 'com.hrm.testcases.TC_004_FieldLevelValidations')
+data.setCell(6, 3, 22671);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyStatusAfterAddingNewUser')
+data.setCell(7, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(7, 3, 21633);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyResultsForStatusEnabled')
+data.setCell(8, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(8, 3, 20991);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validatingAddUserWhenUserameFieldIsEmpty')
+data.setCell(9, 2, 'com.hrm.testcases.TC_004_FieldLevelValidations')
+data.setCell(9, 3, 19829);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyExistingEmployeeNameRecords')
+data.setCell(10, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(10, 3, 18572);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyResultsForUserRoleESS')
+data.setCell(11, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(11, 3, 18175);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'compareAddUserScreenshot')
+data.setCell(12, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(12, 3, 17248);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validPasswordAttempt')
+data.setCell(13, 2, 'com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials')
+data.setCell(13, 3, 16010);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyResultsForUserRoleAdmin')
+data.setCell(14, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(14, 3, 15295);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'compareHomePageScreenshot')
+data.setCell(15, 2, 'com.hrm.testcases.TC_001_VerifyHomePage')
+data.setCell(15, 3, 14768);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyLogout')
+data.setCell(16, 2, 'com.hrm.testcases.TC_005_VerifyLogoutModule')
+data.setCell(16, 3, 12293);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyNonExistingEmployeeNameRecords')
+data.setCell(17, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(17, 3, 11923);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyStatusContentsInDropDown')
+data.setCell(18, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(18, 3, 11523);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyDashboardPageContents')
+data.setCell(19, 2, 'com.hrm.testcases.TC_007_VerifyDashboardModule')
+data.setCell(19, 3, 10997);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifySearchResultWithExistingUsername')
+data.setCell(20, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(20, 3, 10798);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyContentsOfTheUserProfileBtn')
+data.setCell(21, 2, 'com.hrm.testcases.TC_005_VerifyLogoutModule')
+data.setCell(21, 3, 9566);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyAdminPageContents')
+data.setCell(22, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(22, 3, 8816);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyUserRoleOptions')
+data.setCell(23, 2, 'com.hrm.testcases.TC_003_VerifyAdminModule')
+data.setCell(23, 3, 7946);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'invalidPasswordAttempt')
+data.setCell(24, 2, 'com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials')
+data.setCell(24, 3, 7034);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyLoginWithTwoWrongAttempts')
+data.setCell(25, 2, 'com.hrm.testcases.TC_004_FieldLevelValidations')
+data.setCell(25, 3, 6829);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyLoginWithThreeWrongAttempts')
+data.setCell(26, 2, 'com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts')
+data.setCell(26, 3, 2073);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyLoginWithThreeWrongAttempts')
+data.setCell(27, 2, 'com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts')
+data.setCell(27, 3, 1799);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyLoginWithThreeWrongAttempts')
+data.setCell(28, 2, 'com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts')
+data.setCell(28, 3, 1796);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrm.testcases.TC_001_VerifyHomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareHomePageScreenshot</span>
+                <span class="method-start">30340 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">45211 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">51767 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidPasswordAttempt</span>
+                <span class="method-start">70403 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">77465 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">80399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validPasswordAttempt</span>
+                <span class="method-start">97128 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">113145 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrm.testcases.TC_003_VerifyAdminModule</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">118270 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteUser</span>
+                <span class="method-start">139735 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">171689 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">174131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAdminPageContents</span>
+                <span class="method-start">191599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">200423 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">204666 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResultsForStatusEnabled</span>
+                <span class="method-start">224326 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">245325 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">248398 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResultsForStatusDisabled</span>
+                <span class="method-start">277125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">304172 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">307458 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResultsForUserRoleESS</span>
+                <span class="method-start">325684 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">343865 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">347613 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResultsForUserRoleAdmin</span>
+                <span class="method-start">366306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">381603 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">384312 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserRoleOptions</span>
+                <span class="method-start">406780 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">414728 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">420471 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyStatusAfterAddingNewUser</span>
+                <span class="method-start">438728 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">460363 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">463558 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchResultWithExistingUsername</span>
+                <span class="method-start">480623 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">491441 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">494113 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyExistingEmployeeNameRecords</span>
+                <span class="method-start">509850 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">528440 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">531025 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNonExistingEmployeeNameRecords</span>
+                <span class="method-start">552313 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">564243 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">566190 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyStatusContentsInDropDown</span>
+                <span class="method-start">583962 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">595489 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">597879 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareAddUserScreenshot</span>
+                <span class="method-start">614544 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">631795 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">633740 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyByAddingNewDuplicateUsername</span>
+                <span class="method-start">654543 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">691155 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrm.testcases.TC_004_FieldLevelValidations</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">693688 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validatingAddUserWhenEmployeeNameFieldIsEmpty</span>
+                <span class="method-start">713191 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">737473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">740050 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum</span>
+                <span class="method-start">758924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">781609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">783613 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validatingAddUserWhenUserameFieldIsEmpty</span>
+                <span class="method-start">803322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">823159 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">825371 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verfyAddUserUsernameFieldForOnlyAlphaNumeric</span>
+                <span class="method-start">844221 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">867844 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">873853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddUserUsernameFieldValueLimit</span>
+                <span class="method-start">892472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">917800 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">919984 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginWithTwoWrongAttempts</span>
+                <span class="method-start">939756 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">946588 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrm.testcases.TC_005_VerifyLogoutModule</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">948869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyContentsOfTheUserProfileBtn</span>
+                <span class="method-start">966609 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">976180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">979055 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogout</span>
+                <span class="method-start">995653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1007952 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrm.testcases.TC_007_VerifyDashboardModule</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1010995 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDashboardPageContents</span>
+                <span class="method-start">1029323 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1040324 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupBeforeTest</span>
+                <span class="method-start">1044536 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginWithThreeWrongAttempts(Admin1, pass1)</span>
+                <span class="method-start">1059376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginWithThreeWrongAttempts(Admin2, pass2)</span>
+                <span class="method-start">1061453 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginWithThreeWrongAttempts(Admin3, pass3)</span>
+                <span class="method-start">1063253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1065065 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
